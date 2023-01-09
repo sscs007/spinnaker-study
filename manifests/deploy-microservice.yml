@@ -54,15 +54,15 @@ metadata:
         stack: frontend
     annotations:
         nginx.ingress.kubernetes.io/rewrite-target: /$2
-    name: mild-temper-ingress
+    name: confidential-soul-ingress
     namespace: microservices
 spec:
     rules:
         -   http:
                 paths:
-                    -   path: /mild-temper(/|$)(.*)
+                    -   path: /confidential-soul(/|$)(.*)
                         backend:
-                            serviceName: mild-temper-microservice-service
+                            serviceName: confidential-soul-microservice-service
                             servicePort: 30201
 
 
